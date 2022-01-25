@@ -20,8 +20,6 @@ def encrypt(text, shift):
 
     print(f"The encoded text is {cipher_text}")
     #TODO-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.
-
-
     #e.g.
     #plain_text = "hello"
     #shift = 5
