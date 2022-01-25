@@ -11,8 +11,12 @@ def encrypt(text, shift):
         position = alphabet.index(letter)
         if (position + shift) > (len(alphabet) - 1):
             new_position = (position+shift)-len(alphabet)
-            new_letter = alphabet[new_position]
-            cipher_text += new_letter
+            while new_position > len(alphabet):
+                new_position -= len(alphabet)
+            else:
+                new_position -= len(alphabet)
+                new_letter = alphabet[new_position]
+                cipher_text += new_letter
         else:
             new_position = position + shift
             new_letter = alphabet[new_position]
