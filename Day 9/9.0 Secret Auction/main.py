@@ -22,10 +22,9 @@ while not should_end:
 
     bidder = input("What is your name?: ")
     bid = input("What's your bid?: $")
-    # TODO clear screen
 
     other_bidders = input("Are there any other bidders? Type 'Yes' or 'No'.\n").lower()
-
+    # TODO clear screen
 
     add_to_dictionary(bid, bidder)
 
