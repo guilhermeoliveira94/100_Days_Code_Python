@@ -22,7 +22,7 @@ def decrypt(text, shift):
         ind = alphabet.index(letra)
         ind -= shift
         if ind < 0:
-            while ind < 25:
+            while ind < 0:
                 temp = ind + 25
                 ind = +1
                 ind += temp
