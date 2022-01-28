@@ -31,7 +31,6 @@ def guess_number(guess):
             print("Too hight.")
             print("Guess again.")
             print(f"You have {lives} attempts remaining to guess the number.")
-            print(f"(The correct number is {rand_number})")
             print("\n")
             guess = int(input("Make a new guess: "))
         else:
@@ -39,12 +38,11 @@ def guess_number(guess):
             print("Too low.")
             print("Guess again.")
             print(f"You have {lives} attempts remaining to guess the number.")
-            print(f"(The correct number is {rand_number})")
             print("\n")
             guess = int(input("Make a new guess: "))
 
     print("Game over!")
-    print(f"I was thinking number {rand_number}")
+    print(f"The number was {rand_number}.")
     exit()
 
 guess = int(input("Make a guess: "))
