@@ -4,13 +4,14 @@ import random
 
 score = 0
 
+sorted_name_a = []
+sorted_name_a.append(data[random.randint(0, len(data) - 1)])
+
 def game():
     global score
+    global sorted_name_a
 
     print(logo)
-
-    sorted_name_a = []
-    sorted_name_a.append(data[random.randint(0, len(data) - 1)])
 
     sorted_name_b = []
     sorted_name_b.append(data[random.randint(0, len(data) - 1)])
@@ -35,6 +36,7 @@ def game():
         if guess > sorted_name_a[0]['follower_count']:
             score += 1
             print(f"You're right! Current score: {score}. ")
+            sorted_name_a = sorted_name_b
             game()
 
         else:
