@@ -7,6 +7,7 @@ score = 0
 sorted_name_a = []
 sorted_name_a.append(data[random.randint(0, len(data) - 1)])
 
+
 def game():
     global score
     global sorted_name_a
@@ -44,5 +45,6 @@ def game():
             exit()
     else:
         print("Wrong input.")
+
 
 game()
