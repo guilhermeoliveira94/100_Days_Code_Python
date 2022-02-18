@@ -1,0 +1,13 @@
+{
+ "Picpay": {
+  "email": "guilhermeoliveira.94@hotmail.com",
+  "password": "!QS0$H57wa$yYbq"
+ }
+}
+
+{
+    "Tic": {
+        "email": "guilhermeoliveira.94@hotmail.com",
+        "password": "9$WxdfV&2c0fL("
+    }
+}
